@@ -48,10 +48,13 @@ if (Meteor.isServer) {
   }
 
   function rejigger() {
-    var i = getRandomInt(0, Blocks.find().count()-1);
+    var count = Blocks.find().count();
+    var i = getRandomInt(0, count-1);
     var num = getRandomInt(0,100);
     var item = Blocks.find().fetch()[i];
     var c = getRandomInt(0,2);
+
+    if (count > 30) c++;
 
     if (c==0) {
       // Add
@@ -63,7 +66,7 @@ if (Meteor.isServer) {
       if (item) {
         Blocks.remove(item._id);
       }
-    } else if (c==2) {
+    } else if (c>=2) {
       // Fiddle
       console.log("Fiddle");
       if (item) {
