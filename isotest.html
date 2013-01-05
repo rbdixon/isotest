@@ -1,0 +1,20 @@
+<head>
+  <title>isotest</title>
+</head>
+
+<body>
+	<h1>Isotope Test</h1>
+  {{> container}}
+</body>
+
+<template name="container">
+	<div id="container">
+		{{#each blocks}}
+		{{> block}}
+		{{/each}}
+	</div>
+</template>
+
+<template name="block">
+	<div class="item block">{{num}}</div>
+</template>
