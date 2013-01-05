@@ -3,3 +3,5 @@ This is an example of using Meteor with Isotope. This must be run with Meteorite
 $ mrt
 
 Then point your browser to http://localhost:3000
+
+Or see it live at http://isotest.meteor.com
