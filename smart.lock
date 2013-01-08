@@ -1,0 +1,19 @@
+{
+  "meteor": {
+    "git": "https://github.com/meteor/meteor.git",
+    "branch": "master",
+    "commit": "182e1dcd81916bb47e74a9e4cdba07cebd39fe3b"
+  },
+  "dependencies": {
+    "basePackages": {
+      "isotope": {}
+    },
+    "packages": {
+      "isotope": {
+        "git": "https://github.com/digioak/meteor-isotope.git",
+        "tag": "v0.0.1",
+        "commit": "e5f91aee4814b05b7dcea877a7a8e572cccc293f"
+      }
+    }
+  }
+}
